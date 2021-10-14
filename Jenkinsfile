@@ -3,12 +3,12 @@ pipeline {
    	 stages {     	 
    	 stage("Compile") {          	 
    			 steps {               	 
-   				 sh "cd ReviewAnalyser; mvn compile" 
+   				 sh "mvn compile" 
    			 }     	 
    		 }     	 
    	 stage("Unit test") {          	 
    		 steps {               	 
-   				 sh "cd ReviewAnalyser; mvn test"          	 
+   				 sh "mvn test"          	 
    			 }     	 
    		 }	 
    	 }
